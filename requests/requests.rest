@@ -1,0 +1,16 @@
+
+
+// Get all blogs
+GET http://localhost:3001/api/blogs
+
+###
+// Post blog
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+
+{
+    "title": "To kill a mocking bird",
+    "author": "Harper Lee",
+    "url": "#",
+    "likes": 100
+}
