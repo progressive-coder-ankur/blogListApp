@@ -51,17 +51,15 @@ const blogs = [
   },
 ]
 
-describe('favorite blog', () => {
-  test(`favorite blog from all , should return {
-      title: 'Canonical string reduction',
-      author: 'Edsger W. Dijkstra',
-      likes: 12,
+describe('Author with most likes', () => {
+  test(`most likes, should return {
+      author: 'Robert C. Martin',
+      likes: 22,
     }`, () => {
-    const result = list_helper.favoriteBlog(blogs)
-    expect(result).toEqual({
-      title: 'Canonical string reduction',
-      author: 'Edsger W. Dijkstra',
-      likes: 12,
+    const results = list_helper.mostLikes(blogs)
+    expect(results).toEqual({
+      author: 'Robert C. Martin',
+      likes: 22,
     })
   })
 })

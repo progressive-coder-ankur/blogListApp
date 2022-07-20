@@ -56,12 +56,12 @@ describe('total likes', () => {
 
   const listWithAllBlog = [...blogs]
 
-  test('one blog', () => {
+  test('one blog, should return 7', () => {
     const result = list_helper.totalLikes(listWithOneBlog)
     expect(result).toBe(7)
   })
 
-  test('many blogs', () => {
+  test('many blogs , should return 36', () => {
     const result = list_helper.totalLikes(listWithAllBlog)
     expect(result).toBe(36)
   })

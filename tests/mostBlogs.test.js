@@ -52,7 +52,10 @@ const blogs = [
 ]
 
 describe('most blogs by an author', () => {
-  test('most blogs', () => {
+  test(`most blogs, should return {
+      author: 'Robert C. Martin',
+      blogs: 3,
+    } `, () => {
     const results = list_helper.mostBlogs(blogs)
     expect(results).toEqual({
       author: 'Robert C. Martin',
